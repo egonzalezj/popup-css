@@ -21,8 +21,49 @@ html {
     color: #D90C43;
     display: block;
     background: white;
-    padding: 20px 50px;
-    border-radius: 50px;
+    /*padding: 20px 50px;*/
+    /*border-radius: 50px;*/
+}
+
+.especialidades {
+    width: 250px;
+    height: 220px;
+    position: relative;
+}
+
+.especialidades h2 {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.especialidades img {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.especialidades-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(1,72,94);
+}
+
+.especialidades-overlay:hover {
+    opacity: 0.8;
 }
 
 .container-all {
