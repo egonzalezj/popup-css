@@ -38,6 +38,13 @@ html {
     opacity: 1;
 }
 
+.container-all:target .popup {
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    visibility: visible;
+}
+
 .popup {
     width:100%;
     max-width: 800px;
@@ -45,9 +52,11 @@ html {
     position: relative;
     display: flex;
     background: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    visibility: hidden;
+    top: -80%;
+    left: -80%;
+    transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;
 }
 
 .img {
