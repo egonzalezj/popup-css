@@ -90,34 +90,44 @@ html {
 }
 
 .popup {
-    width:100%;
-    max-width: 800px;
-    height: 500px;
+    width:500px;
+    max-height: 600px;
+    height: 100%;
     position: relative;
     display: flex;
+    flex-direction: column;
     background: white;
     visibility: hidden;
     top: -80%;
     left: -80%;
     transform: rotate(90deg) translate(-150%, 230%);
     transition: all 600ms;
+    border-radius: 4px;
 }
 
 .img {
-    width: 40%;
-    background-image: url("../img/pexels-daria-shevtsova-704569.jpg");
+    background-image: url("../img/hamburguesa-de-comida-rapida.png");
+    background-color: #302f3355;
     background-size: cover;
     background-position: center;
+    border-radius: 100%;
+    height: 40%;
+    margin: 30px auto 0px auto;
+    max-width: 150px;
+    max-height: 150px;
+    width: 100%;
 }
 
 .container-text {
-    width: 60%;
+    height: 60%;
     padding: 50px;
     overflow-y: auto;
 }
 
-.container-text h1 {
-    font-size: 30px;
+.container-text h2 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
 }
 
 .container-text p {
@@ -125,20 +135,42 @@ html {
     font-size: 16px;
 }
 
+.container-text ul {
+    margin: 20px 0px 0px 30px;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
 .btn-close-popup {
     width: 50px;
     height: 50px;
     position: absolute;
-    right: -20px;
-    top: -20px;
-    background: black;
-    color: white;
-    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+    /*background: black;*/
+    color: rgb(1,72,94,0.8);
+    /*order-radius: 50%;*/
     line-height: 10px;
     padding: 20px;
+    font-weight: 600;
 }
 
-@media screen and (max-width: 900px) {
+.btn-close-popup:hover {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: rgb(1,72,94,0.8);
+    color: white;
+    /*border-radius: 4px;*/
+    line-height: 10px;
+    padding: 20px;
+    font-weight: 600;
+}
+
+/*@media screen and (max-width: 900px) {
     .popup {
         flex-direction: column;
         height: 100%;
@@ -156,7 +188,7 @@ html {
         padding: 80px;
     }
 
-    .container-text h1 {
+    .container-text h2 {
         font-size: 20px;
     }
 
@@ -170,11 +202,11 @@ html {
         padding: 20px;
     }
 
-    .container-text h1 {
+    .container-text h2 {
         font-size: 20px;
     }
 
     .container-text p {
         font-size: 12px;
     }
-}
+}*/
