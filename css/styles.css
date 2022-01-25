@@ -29,6 +29,12 @@ html {
     width: 250px;
     height: 220px;
     position: relative;
+    transition: all 600ms;
+}
+
+.especialidades:hover {
+    width: 270px;
+    height: 240px;
 }
 
 .especialidades h2 {
@@ -44,9 +50,9 @@ html {
 .especialidades img {
     display: block;
     margin: auto;
-    padding-top: 20px;
-    width: 200px;
-    height: 200px;
+    /*padding-top: 20px;*/
+    width: 80%;
+    height: 90.9%;
 }
 
 .especialidades-overlay {
